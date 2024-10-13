@@ -4,6 +4,7 @@ import 'package:prueba_3/providers/product_form_provider.dart';
 import 'package:prueba_3/screen/edit_product_screen.dart';
 import 'package:prueba_3/screen/list_product_screen.dart';
 import 'package:prueba_3/screen/product_detail_screen.dart';
+import 'package:prueba_3/screen/register_user_screen.dart';
 import 'package:prueba_3/services/auth_service.dart';
 import 'package:prueba_3/services/producto_service_2.dart';
 import 'package:prueba_3/theme/my_theme.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         },
         'detail': (context) =>
             ProductDetailScreen(), // Registrar la ruta para la pantalla de detalles
+        'add_user': (context) => const RegisterUserScreen(),
       },
     );
   }
